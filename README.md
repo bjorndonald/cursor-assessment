@@ -5,6 +5,10 @@ Here is a link to the demo.
 ## Live Demo
 There is an online demo [here](cursor-assessment.vercel.app)
 
+## Local developemnt
+
+Simply execute the command `npm run dev` in the root.
+
 ## Stacked Bar chart
 
 This stacked bar had some very specific design requirements so I decided to not use any of the chart modules and used HTML, CSS and ingenuity to build the chart myself. 
