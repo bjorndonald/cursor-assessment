@@ -1,3 +1,4 @@
+// @ts-ignore
 import * as d3 from "d3";
 
 const DrawDoughnutChart = async (element: HTMLDivElement, data: {value: number}[], colors: string[], iconSources: string[]) => {
@@ -53,16 +54,19 @@ const DrawDoughnutChart = async (element: HTMLDivElement, data: {value: number}[
         .text("100,000");
 
     const arcGenerator = d3.arc().innerRadius(innerRadius).outerRadius(outerRadius).padAngle(padAngle).cornerRadius(cornerRadius);
-
+    // @ts-ignore
     const pieGenerator = d3.pie().value((d) => d.value);
-
+    // @ts-ignore
     const arcs = svg.selectAll().data(pieGenerator(data)).enter();
+    // @ts-ignore
     arcs
         .append("path")
+        // @ts-ignore
         .attr("d", arcGenerator)
         .style("fill", (d, i) => colors[i % data.length]);
 
     arcs.each((d, i, nodes) => {
+        // @ts-ignore
         const [x, y] = arcGenerator.centroid(d); // Calculate center of each segment
         const icon = icons[i];
         const iconSize = 60; // Adjust size of icons
