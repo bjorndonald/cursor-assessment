@@ -1,4 +1,3 @@
-import React from 'react'
 
 const colors = [
     { key: "value1", color: "#FF8A08"  },

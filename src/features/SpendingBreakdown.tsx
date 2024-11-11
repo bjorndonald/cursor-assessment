@@ -1,4 +1,3 @@
-import React from 'react'
 import DoughnutChart from '../components/DoughnutChart'
 
 const SpendingBreakdown = () => {

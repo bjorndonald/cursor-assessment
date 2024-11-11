@@ -1,22 +1,11 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import Spending from './features/Spending'
 import SpendingBreakdown from './features/SpendingBreakdown'
-import axios from 'axios'
 
 function App() {
   const [chart, setChart] = useState<"Spending Chart"|"Spending Breakdown">("Spending Chart")
   const [period, setPeriod] = useState<"D" | "W" | "M" | "6M">("D")
-  const init = async () => {
-    const res = await axios.post("http://localhost:8000/api/v1/login", {
-      email: "scamm@41nine.com" ,
-      password: "ScamMaster3000"
-    })
-  }
-  useEffect(() => {
-    init()
-    return () => { 
-    }
-  }, [])
+  
   
   return (
     <main className='min-h-screen w-screen bg-base-100  flex justify-center '>

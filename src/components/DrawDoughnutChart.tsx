@@ -65,7 +65,7 @@ const DrawDoughnutChart = async (element: HTMLDivElement, data: {value: number}[
         .attr("d", arcGenerator)
         .style("fill", (d, i) => colors[i % data.length]);
 
-    arcs.each((d, i, nodes) => {
+    arcs.each((d, i) => {
         // @ts-ignore
         const [x, y] = arcGenerator.centroid(d); // Calculate center of each segment
         const icon = icons[i];
