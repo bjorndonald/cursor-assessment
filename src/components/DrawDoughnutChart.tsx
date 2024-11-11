@@ -63,7 +63,9 @@ const DrawDoughnutChart = async (element: HTMLDivElement, data: {value: number}[
         .append("path")
         // @ts-ignore
         .attr("d", arcGenerator)
-        .style("fill", (d, i) => colors[i % data.length]);
+        .style("fill", (d, i) => {
+            console.log(d)
+            return colors[i % data.length]});
 
     arcs.each((d, i) => {
         // @ts-ignore
