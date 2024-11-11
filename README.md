@@ -2,6 +2,9 @@
 This project was done as an assessment for the Frontend developer position in the Cursor Engineering Team. This project was built using React, TailwindCSS, Vite and D3.js.
 Here is a link to the demo.
 
+## Live Demo
+There is an online demo [here](cursor-assessment.vercel.app)
+
 ## Stacked Bar chart
 
 This stacked bar had some very specific design requirements so I decided to not use any of the chart modules and used HTML, CSS and ingenuity to build the chart myself. 
