@@ -1,6 +1,13 @@
 // @ts-ignore
 import * as d3 from "d3";
 
+/**
+ * This function is for creating a doughnut chart based on data and colors entered. Please make sure the amount of segments match the amount of colors and icons
+ * @param element The DOM element where the chart created 
+ * @param data The data which will be used to generate the chart
+ * @param colors The colors of each segment
+ * @param iconSources The icon which will be placed in each segment.
+ */
 const DrawDoughnutChart = async (element: HTMLDivElement, data: {value: number}[], colors: string[], iconSources: string[]) => {
     const boxSize = 960; // graph boxsize, in pixels
     const width = 960; // outer width, in pixels

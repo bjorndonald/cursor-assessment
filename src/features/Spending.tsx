@@ -31,6 +31,15 @@ const data = {
         ],
     }
 
+/**
+ * Component for the spending details screen.
+ *
+ * @component
+    const period = "D"
+ * return (
+ *   <Spending period={period} />
+ * )
+ */
 const Spending = ({period}:{period: "D"|"W"|"M"|"6M"}) => {
   return (
       <div className="flex rounded-xl bg-base-200 flex-col">

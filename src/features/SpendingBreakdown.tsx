@@ -1,5 +1,14 @@
 import DoughnutChart from '../components/DoughnutChart'
 
+/**
+ * Component for the spending breakdown screen.
+ *
+ * @component
+
+ * return (
+ *   <SpendingBreakdown />
+ * )
+ */
 const SpendingBreakdown = () => {
   return (
       <div className="flex rounded-xl bg-base-200 flex-col">

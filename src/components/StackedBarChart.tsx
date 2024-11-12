@@ -1,4 +1,5 @@
 
+// Colors for each bar on stack
 const colors = [
     { key: "value1", color: "#FF8A08"  },
     { key: "value2", color: "#30E3DF" },
@@ -6,6 +7,22 @@ const colors = [
     { key: "value4", color: "#8576FF" }
 ]
 
+/**
+ * Component for creating a stacked bar using HTML and CSS.
+ *
+ * @component
+ * @example
+ * const data = [
+            { name: '1-4', value1: 0, value2: 0, value3: 0, value4: 0, },
+            { name: '4-8', value1: 0, value2: 0, value3: 0, value4: 0 },
+            { name: '9-15', value1: 86000, value2: 0, value3: 0, value4: 0 },
+            { name: '16-21', value1: 40000, value2: 40000, value3: 40000, value4: 0, },
+            { name: '21-25', value1: 120000, value2: 30000, value3: 30000, value4: 30000 },
+        ]
+ * return (
+ *   <StackedBarChart data={data} />
+ * )
+ */
 const StackedBarChart = ({data}: {
     data:{
     name: string;
