@@ -1,82 +1,474 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>JSDoc: Home</title>
-
-    <script src="scripts/prettify/prettify.js"> </script>
-    <script src="scripts/prettify/lang-css.js"> </script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
-    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+  <meta charset='utf-8'>
+  <title>chorus-web 0.0.0 | Documentation</title>
+  <meta name='viewport' content='width=device-width,initial-scale=1'>
+  <link href='assets/bass.css' rel='stylesheet'>
+  <link href='assets/style.css' rel='stylesheet'>
+  <link href='assets/github.css' rel='stylesheet'>
+  <link href='assets/split.css' rel='stylesheet'>
 </head>
+<body class='documentation m0'>
+    <div class='flex'>
+      <div id='split-left' class='overflow-auto fs0 height-viewport-100'>
+        <div class='py1 px2'>
+          <h3 class='mb0 no-anchor'>chorus-web</h3>
+          <div class='mb1'><code>0.0.0</code></div>
+          <input
+            placeholder='Filter'
+            id='filter-input'
+            class='col12 block input'
+            spellcheck='false'
+            autocapitalize='off'
+            autocorrect='off'
+            type='text' />
+          <div id='toc'>
+            <ul class='list-reset h5 py1-ul'>
+              
+                
+                <li><a
+                  href='#donutchart'
+                  class="">
+                  DonutChart
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#drawdoughnutchart'
+                  class="">
+                  DrawDoughnutChart
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#stackedbarchart'
+                  class="">
+                  StackedBarChart
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#spending'
+                  class="">
+                  Spending
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#spendingbreakdown'
+                  class="">
+                  SpendingBreakdown
+                  
+                </a>
+                
+                </li>
+              
+            </ul>
+          </div>
+          <div class='mt1 h6 quiet'>
+            <a href='https://documentation.js.org/reading-documentation.html'>Need help reading this?</a>
+          </div>
+        </div>
+      </div>
+      <div id='split-right' class='relative overflow-auto height-viewport-100'>
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
 
-<body>
-
-<div id="main">
-
-    <h1 class="page-title">Home</h1>
-
+  
+  <div class='clearfix'>
     
-
-
-
+    <h3 class='fl m0' id='donutchart'>
+      DonutChart
+    </h3>
     
-
-
-    <h3> </h3>
-
-
-
-
-
-
-
-
-
-
     
+  </div>
+  
+
+  <p>Component for creating doughnut chart using D3.js</p>
+
+    <div class='pre p1 fill-light mt0'>DonutChart</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='drawdoughnutchart'>
+      DrawDoughnutChart
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>This function is for creating a doughnut chart based on data and colors entered. Please make sure the amount of segments match the amount of colors and icons</p>
+
+    <div class='pre p1 fill-light mt0'>DrawDoughnutChart</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>element</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/API/HTMLDivElement">HTMLDivElement</a>)</code>
+	    The DOM element where the chart created
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>data</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;{value: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>}>)</code>
+	    The data which will be used to generate the chart
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>colors</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>>)</code>
+	    The colors of each segment
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>iconSources</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>>)</code>
+	    The icon which will be placed in each segment.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='stackedbarchart'>
+      StackedBarChart
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Component for creating a stacked bar using HTML and CSS.</p>
+
+    <div class='pre p1 fill-light mt0'>StackedBarChart</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>$0</span> <code class='quiet'>({data: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;{name: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, value1: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>, value2: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>, value3: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>, value4: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>}>})</code>
+	    
+          </div>
+          
+          <table class='mt1 mb2 fixed-table h5 col-12'>
+            <colgroup>
+              <col width='30%' />
+              <col width='70%' />
+            </colgroup>
+            <thead>
+              <tr class='bold fill-light'>
+                <th>Name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody class='mt1'>
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>$0.data</span> <code class='quiet'>any</code>
+  </td>
+  <td class='break-word'><span></span></td>
+</tr>
 
 
+              
+            </tbody>
+          </table>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> data = [
+{ <span class="hljs-attr">name</span>: <span class="hljs-string">&#x27;1-4&#x27;</span>, <span class="hljs-attr">value1</span>: <span class="hljs-number">0</span>, <span class="hljs-attr">value2</span>: <span class="hljs-number">0</span>, <span class="hljs-attr">value3</span>: <span class="hljs-number">0</span>, <span class="hljs-attr">value4</span>: <span class="hljs-number">0</span>, },
+{ <span class="hljs-attr">name</span>: <span class="hljs-string">&#x27;4-8&#x27;</span>, <span class="hljs-attr">value1</span>: <span class="hljs-number">0</span>, <span class="hljs-attr">value2</span>: <span class="hljs-number">0</span>, <span class="hljs-attr">value3</span>: <span class="hljs-number">0</span>, <span class="hljs-attr">value4</span>: <span class="hljs-number">0</span> },
+{ <span class="hljs-attr">name</span>: <span class="hljs-string">&#x27;9-15&#x27;</span>, <span class="hljs-attr">value1</span>: <span class="hljs-number">86000</span>, <span class="hljs-attr">value2</span>: <span class="hljs-number">0</span>, <span class="hljs-attr">value3</span>: <span class="hljs-number">0</span>, <span class="hljs-attr">value4</span>: <span class="hljs-number">0</span> },
+{ <span class="hljs-attr">name</span>: <span class="hljs-string">&#x27;16-21&#x27;</span>, <span class="hljs-attr">value1</span>: <span class="hljs-number">40000</span>, <span class="hljs-attr">value2</span>: <span class="hljs-number">40000</span>, <span class="hljs-attr">value3</span>: <span class="hljs-number">40000</span>, <span class="hljs-attr">value4</span>: <span class="hljs-number">0</span>, },
+{ <span class="hljs-attr">name</span>: <span class="hljs-string">&#x27;21-25&#x27;</span>, <span class="hljs-attr">value1</span>: <span class="hljs-number">120000</span>, <span class="hljs-attr">value2</span>: <span class="hljs-number">30000</span>, <span class="hljs-attr">value3</span>: <span class="hljs-number">30000</span>, <span class="hljs-attr">value4</span>: <span class="hljs-number">30000</span> },
+]
+<span class="hljs-keyword">return</span> (
+  <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">StackedBarChart</span> <span class="hljs-attr">data</span>=<span class="hljs-string">{data}</span> /&gt;</span></span>
+)</pre>
+    
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='spending'>
+      Spending
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Component for the spending details screen.</p>
+
+    <div class='pre p1 fill-light mt0'>Spending</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>$0</span> <code class='quiet'>({period: (<code>"D"</code> | <code>"W"</code> | <code>"M"</code> | <code>"6M"</code>)})</code>
+	    
+          </div>
+          
+          <table class='mt1 mb2 fixed-table h5 col-12'>
+            <colgroup>
+              <col width='30%' />
+              <col width='70%' />
+            </colgroup>
+            <thead>
+              <tr class='bold fill-light'>
+                <th>Name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody class='mt1'>
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>$0.period</span> <code class='quiet'>any</code>
+  </td>
+  <td class='break-word'><span></span></td>
+</tr>
 
 
-    <section>
-        <article><h1>Frontend developer assessment</h1>
-<p>This project was done as an assessment for the Frontend developer position in the Cursor Engineering Team. This project was built using React, TailwindCSS, Vite and D3.js.
-Here is a link to the demo.</p>
-<h2>Live Demo</h2>
-<p>There is an online demo <a href="https://cursor-assessment.vercel.app">here</a></p>
-<h2>Local developemnt</h2>
-<p>Simply execute the command <code>npm run dev</code> in the root.</p>
-<h2>Stacked Bar chart</h2>
-<p>This stacked bar had some very specific design requirements so I decided to not use any of the chart modules and used HTML, CSS and ingenuity to build the chart myself.</p>
-<p>If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:</p>
-<img src="./screenshots/Screenshot 2024-11-11 at 5.02.54 PM.png">
-<h2>Doughnut chart</h2>
-<p>Not many modules allow for custom adjustments to charts like D3.js. I also enjoy the fact that it uses svg elements for the chats which gives a greater amount of flexibility. I used D3.js to build the chart and made my adjustments to the svg element using CSS.</p>
-<img src="./screenshots/Screenshot 2024-11-11 at 5.03.23 PM.png"></article>
-    </section>
+              
+            </tbody>
+          </table>
+          
+        </div>
+      
+    </div>
+  
 
+  
 
+  
 
+  
 
+  
 
+  
 
-</div>
+  
 
-<nav>
-    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="DonutChart.html">DonutChart</a></li><li><a href="SpendingBreakdown.html">SpendingBreakdown</a></li></ul>
-</nav>
+  
 
-<br class="clear">
+  
 
-<footer>
-    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.4</a> on Tue Nov 12 2024 08:33:43 GMT+0100 (West Africa Standard Time)
-</footer>
+  
+</section>
 
-<script> prettyPrint(); </script>
-<script src="scripts/linenumber.js"> </script>
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='spendingbreakdown'>
+      SpendingBreakdown
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Component for the spending breakdown screen.</p>
+
+    <div class='pre p1 fill-light mt0'>SpendingBreakdown</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+      </div>
+    </div>
+  <script src='assets/anchor.js'></script>
+  <script src='assets/split.js'></script>
+  <script src='assets/site.js'></script>
 </body>
 </html>
