@@ -4,11 +4,7 @@ const SpendingBreakdown = () => {
   return (
       <div className="flex rounded-xl bg-base-200 flex-col">
           <div className="flex flex-col gap-5  px-10 py-10">
-              
-
               <DoughnutChart />
-
-
           </div>
           <div className="border-t p-4 grid grid-cols-2 gap-3 border-base-300">
               <div className="flex gap-1.5 items-center">

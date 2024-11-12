@@ -3,7 +3,7 @@ This project was done as an assessment for the Frontend developer position in th
 Here is a link to the demo.
 
 ## Live Demo
-There is an online demo [here](cursor-assessment.vercel.app)
+There is an online demo [here](https://cursor-assessment.vercel.app)
 
 ## Local developemnt
 

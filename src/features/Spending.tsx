@@ -1,6 +1,7 @@
 import StackedBarChart from '../components/StackedBarChart'
 import NotificationIcon from '../icons/Notification.icon'
 
+// Data format to be visualized in the chart
 const data = {
         "D": [
             { name: '1-4', value1: 0, value2: 0, value3: 0, value4: 0, },
@@ -10,20 +11,20 @@ const data = {
             { name: '21-25', value1: 120000, value2: 30000, value3: 30000, value4: 30000 },
         ],
         "W": [
-            { name: 'Week 1', value1: 0, value2: 0, value3: 0, value4: 0, },
-            { name: 'Week 2', value1: 0, value2: 0, value3: 0, value4: 0 },
+            { name: 'Week 1', value1: 30000, value2: 44000, value3: 20000, value4: 0, },
+            { name: 'Week 2', value1: 0, value2: 80000, value3: 0, value4: 0 },
             { name: 'Week 3', value1: 86000, value2: 0, value3: 0, value4: 0 },
             { name: 'Week 4', value1: 40000, value2: 40000, value3: 40000, value4: 0, }
         ],
         "M": [
-            { name: 'Aug', value1: 0, value2: 0, value3: 0, value4: 0, },
-            { name: 'Sep', value1: 0, value2: 0, value3: 0, value4: 0 },
+            { name: 'Aug', value1: 40000, value2: 0, value3: 0, value4: 0, },
+            { name: 'Sep', value1: 20000, value2: 0, value3: 0, value4: 0 },
             { name: 'Oct', value1: 86000, value2: 0, value3: 0, value4: 0 },
             { name: 'Nov', value1: 40000, value2: 40000, value3: 40000, value4: 0, },
             { name: 'Dec', value1: 120000, value2: 30000, value3: 30000, value4: 30000 },
         ],
         "6M": [
-            { name: '1st', value1: 0, value2: 0, value3: 0, value4: 0, },
+            { name: '1st', value1: 10000, value2: 10000, value3: 0, value4: 0, },
             { name: '2nd', value1: 0, value2: 0, value3: 0, value4: 0 },
             { name: '3rd', value1: 86000, value2: 0, value3: 0, value4: 0 },
             { name: '4th', value1: 40000, value2: 40000, value3: 40000, value4: 0, }
@@ -42,12 +43,9 @@ const Spending = ({period}:{period: "D"|"W"|"M"|"6M"}) => {
                           NGN
                       </div>
                   </div>
-
               </div>
 
               <StackedBarChart data={data[period]} />
-
-
           </div>
         <div className="border-t px-1.5 flex items-center gap-2 py-2.5 border-base-300">
             <NotificationIcon />

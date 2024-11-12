@@ -2,7 +2,6 @@
 import * as d3 from "d3";
 
 const DrawDoughnutChart = async (element: HTMLDivElement, data: {value: number}[], colors: string[], iconSources: string[]) => {
-    // green and white
     const boxSize = 960; // graph boxsize, in pixels
     const width = 960; // outer width, in pixels
     const height = 960; // outer height, in pixels
@@ -22,6 +21,7 @@ const DrawDoughnutChart = async (element: HTMLDivElement, data: {value: number}[
             });
         })
     );
+
     // Create new svg
     const svg = d3
         .select(element)
@@ -53,11 +53,13 @@ const DrawDoughnutChart = async (element: HTMLDivElement, data: {value: number}[
         .attr("dy", "1em")
         .text("100,000");
 
+    // Generate the d string for the path element which will signify each segment
     const arcGenerator = d3.arc().innerRadius(innerRadius).outerRadius(outerRadius).padAngle(padAngle).cornerRadius(cornerRadius);
     // @ts-ignore
     const pieGenerator = d3.pie().value((d) => d.value);
     // @ts-ignore
     const arcs = svg.selectAll().data(pieGenerator(data)).enter();
+    // Add segments to the DOM
     // @ts-ignore
     arcs
         .append("path")
@@ -73,6 +75,7 @@ const DrawDoughnutChart = async (element: HTMLDivElement, data: {value: number}[
         const icon = icons[i];
         const iconSize = 60; // Adjust size of icons
 
+        // add image to the center of each segment
         svg.append("image")
             .attr("xlink:href", icon.src)
             .attr("x", x - iconSize / 2)
