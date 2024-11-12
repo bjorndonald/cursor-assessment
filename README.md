@@ -5,6 +5,8 @@ Here is a link to the demo.
 ## Live Demo
 There is an online demo [here](https://cursor-assessment.vercel.app)
 
+You can see the docs [here](https://assessment-docs.vercel.app/)
+
 ## Local developemnt
 
 Simply execute the command `npm run dev` in the root.
